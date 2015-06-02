@@ -4,6 +4,11 @@
     background-position: 100% 0%;
 }
 
+@mixin hr($px) {
+    border-top: #222 solid $px;
+    width: 80px;
+}
+
 @mixin block-code {
     background: #1B1A20;
     border:none;

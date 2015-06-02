@@ -12,7 +12,18 @@
 
         <div id="main-navigation" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="documentation.php"><i class="fa fa-code"></i> Documentation</a></li>
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        <i class="fa fa-code"></i> Documentation
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation" class="dropdown-header">Version</li>
+                        <li><a href="documentation.php?v=3.0">3.0 <span class="pull-right label label-success">Latest</span></a></li>
+                        <li><a href="documentation.php?v=2.2">2.2</a></li>
+                        <li><a href="documentation.php?v=2.1">2.1 <span class="pull-right label label-info">LTS</span></a></li>
+                        <li><a href="documentation.php?v=2.0">2.0 <span class="pull-right label label-danger">EOL</span></a></li>
+                    </ul>
+                </li>
                 <li><a href="#"><i class="fa fa-book"></i> Blog</a></li>
                 <li><a href="#"><i class="fa fa-comments"></i> Discussion</a></li>
             </ul>

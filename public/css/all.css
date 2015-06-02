@@ -234,8 +234,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("/fontsglyphicons-halflings-regular.eot");
+  src: url("/fontsglyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/fontsglyphicons-halflings-regular.woff2") format("woff2"), url("/fontsglyphicons-halflings-regular.woff") format("woff"), url("/fontsglyphicons-halflings-regular.ttf") format("truetype"), url("/fontsglyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 
 .glyphicon {
   position: relative;
@@ -5584,7 +5584,7 @@ button.close {
 .clearfix:after {
   clear: both; }
 
-.center-block, nav[role="navigation"] {
+.center-block {
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -5798,8 +5798,8 @@ button.close {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.3.0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+  src: url("/fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -7593,23 +7593,171 @@ html, body {
 body {
   font-family: "Lato", Helvetica, sans-serif;
   font-size: 13px;
-  color: #34495e;
-  -webkit-font-smoothing: antialiased; }
+  color: #333; }
 
-nav[role="navigation"] {
-  margin-top: 100px; }
-  nav[role="navigation"] a {
-    color: #A7B3C2;
-    font-size: 16px; }
-    nav[role="navigation"] a.navbar-brand {
-      color: #000;
-      font-size: 24px;
-      font-weight: bold;
-      margin-right: 30px; }
-  nav[role="navigation"] li i.fa {
-    margin-right: 10px; }
-  nav[role="navigation"] li a.active {
-    color: #F9604C; }
+h1, h2, h3, .h1, .h2, .h3 {
+  margin-top: 20px;
+  margin-bottom: 10px; }
 
-/*# sourceMappingURL=app.css.map */
-/*# sourceMappingURL=all.css.map */
+h4, h5, h6, .h4, .h5, .h6 {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+section {
+  padding: 80px 0; }
+  section .section-header {
+    text-align: center;
+    margin-bottom: 60px; }
+    section .section-header h4 {
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 1.5px; }
+    section .section-header hr {
+      border-top: #222 solid 3px;
+      width: 80px; }
+
+footer#main-footer {
+  background: #111;
+  padding: 40px 0;
+  color: #C5C5C5;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px; }
+  footer#main-footer a {
+    color: #A7B3C2; }
+    footer#main-footer a:hover {
+      color: #F9604C; }
+
+@media (min-width: 1200px) {
+  nav[role="navigation"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    width: 100%; } }
+
+nav[role="navigation"] .container {
+  margin: 0 auto; }
+
+nav[role="navigation"] a {
+  color: #A7B3C2;
+  font-size: 16px; }
+  nav[role="navigation"] a.navbar-brand {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold; }
+    @media (min-width: 1200px) {
+      nav[role="navigation"] a.navbar-brand {
+        margin-right: 30px; } }
+
+nav[role="navigation"] button.navbar-toggle span.icon-bar {
+  background-color: #A7B3C2; }
+
+nav[role="navigation"] li a.active, nav[role="navigation"] li a:hover {
+  background: transparent;
+  color: #F9604C; }
+
+nav[role="navigation"] li i.fa {
+  margin-right: 10px; }
+
+@media (min-width: 992px) {
+  #landing nav[role="navigation"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    width: 100%; }
+    #landing nav[role="navigation"] .navbar-brand {
+      color: #fff; } }
+
+#landing section#hero {
+  background: #202020 url("/img/bg-featured.jpg") no-repeat;
+  background-size: 100%;
+  background-position: 100% 0%;
+  padding: 180px 0 0; }
+  #landing section#hero h1 {
+    color: white;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.35;
+    color: #fff; }
+    #landing section#hero h1 span {
+      font-weight: 700; }
+
+#landing section#social .social-list li {
+  margin: 0 10px; }
+  #landing section#social .social-list li a {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 600; }
+  #landing section#social .social-list li img {
+    margin-bottom: 15px; }
+  #landing section#social .social-list li.github a {
+    color: #171717; }
+
+#landing section pre {
+  border: none;
+  background-color: transparent;
+  padding: 50px 0px;
+  font-size: 19px; }
+
+/*
+ * Gloom Contrast
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+
+pre {
+  background-color: #0f120f;
+  padding: 2em;
+  color: #D8EBE5;
+}
+
+pre code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+
+pre .pln {
+  color: #D8EBE5;
+}
+
+pre .str {
+  color: #BCD42A;
+}
+pre .kwd {
+  color: #26A6A6;
+}
+pre .com {
+  color: #4F6E64;
+}
+pre .typ {
+  color: #FF5D38;
+}
+pre .lit {
+  color: #BCD42A;
+}
+pre .pun,
+pre .opn,
+pre .clo {
+  color: #D8EBE5;
+}
+pre .tag {
+  color: #26A6A6;
+}
+pre .atn {
+  color: #FF5D38;
+}
+pre .atv {
+  color: #BCD42A;
+}
+pre .dec,
+pre .var {
+  color: #BCD42A;
+}
+pre .fun {
+  color: #26A6A6;
+}

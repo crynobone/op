@@ -1,3 +1,3 @@
-css/*
-js/*
-
+css/app.css
+js/vendor/*
+!js/vendor/prettify.js

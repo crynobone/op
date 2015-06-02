@@ -1,5 +1,9 @@
+@import "variables";
+@import "mixins";
+
 @import "bootstrap-sass/assets/stylesheets/bootstrap";
 @import "font-awesome/scss/font-awesome";
 
 @import "partials/base";
+@import "partials/navbar";
 @import "partials/landing";

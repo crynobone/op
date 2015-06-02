@@ -27,12 +27,30 @@ elixir(function (mix) {
     includePaths: [dir.vendor+'/']
   });
 
-  mix.copy(dir.vendor+'/jquery/dist/jquery.min.js', dir.resources+'/js/vendor/jquery.min.js')
-    .copy(dir.vendor+'/javie/dist/javie.min.js', dir.resources+'/js/vendor/javie.min.js')
-    .copy(dir.vendor+'/vue/dist/vue.min.js', dir.resources+'/js/vendor/vue.min.js')
+
+  mix.coffee('app.coffee', dir.resources+'/js');
+
+  mix.copy(dir.vendor+'/jquery/dist/jquery.min.js', dir.resources+'/js/vendor/jquery.js')
+    .copy(dir.vendor+'/underscore/underscore-min.js', dir.resources+'/js/vendor/underscore.js')
+    .copy(dir.vendor+'/javie/dist/javie.min.js', dir.resources+'/js/vendor/javie.js')
+    .copy(dir.vendor+'/vue/dist/vue.min.js', dir.resources+'/js/vendor/vue.js')
+    .copy(dir.vendor+'/bootstrap-sass/assets/javascripts/bootstrap.min.js',  dir.resources+'/js/vendor/bootstrap.js')
+    .copy(dir.vendor+'/bootstrap-sass/assets/fonts/bootstrap', dir.asset.font)
     .copy(dir.vendor+'/font-awesome/fonts', dir.asset.font)
+    .copy(dir.resources+'/img', dir.asset.img);
 
   mix.styles([
-    'app.css'
+    'app.css',
+    'vendor/prettify.css'
+  ]);
+
+  mix.scripts([
+    'vendor/vue.js',
+    'vendor/jquery.js',
+    'vendor/underscore.js',
+    'vendor/javie.js',
+    'vendor/bootstrap.js',
+    'vendor/prettify.js',
+    'app.js'
   ]);
 });

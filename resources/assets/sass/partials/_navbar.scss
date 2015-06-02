@@ -1,0 +1,47 @@
+nav[role="navigation"] {
+    @media (min-width: $screen-lg-min) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+
+    a {
+        color: $text-anchor-base-color;
+        font-size: 16px;
+
+        &.navbar-brand {
+            color: $text-base-color;
+            font-size: 24px;
+            font-weight: bold;
+
+            @media (min-width: $screen-lg-min) {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    button.navbar-toggle {
+        span.icon-bar {
+            background-color: $text-anchor-base-color;
+        }
+    }
+
+    li {
+        a {
+            &.active, &:hover {
+                background: transparent;
+                color: $text-anchor-active-color;
+            }
+        }
+
+        i.fa {
+            margin-right: 10px;
+        }
+    }
+}

@@ -24,7 +24,7 @@
                         <li><a href="documentation.php?v=2.0">2.0 <span class="pull-right label label-danger">EOL</span></a></li>
                     </ul>
                 </li>
-                <li><a href="#"><i class="fa fa-book"></i> Blog</a></li>
+                <li><a href="blog.php"><i class="fa fa-book"></i> Blog</a></li>
                 <li><a href="#"><i class="fa fa-comments"></i> Discussion</a></li>
             </ul>
 

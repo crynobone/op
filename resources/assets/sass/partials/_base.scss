@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-    color: $text-base-color;
+    color: $text-color;
 }
 
 h1, h2, h3, .h1, .h2, .h3 {
@@ -32,6 +32,28 @@ section {
             font-size: 15px;
             font-weight: 700;
             letter-spacing: 1.5px;
+        }
+    }
+
+    &.heading {
+        padding: 20px 0;
+        @include featured-bg;
+
+        h1 {
+            color: $text-anchor-active-color;
+            margin: 40px auto;
+            font-weight: normal;
+            font-size: 22px;
+
+            a, a:hover {
+                color: $text-anchor-active-color;
+            }
+
+            small {
+                color: $white;
+                display: block;
+                margin-top: 10px;
+            }
         }
     }
 }

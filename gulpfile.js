@@ -53,4 +53,6 @@ elixir(function (mix) {
     'vendor/prettify.js',
     'app.js'
   ]);
+
+  mix.version([dir.asset.css+'/all.css', dir.asset.js+'/all.js']);
 });

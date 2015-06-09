@@ -15,7 +15,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            Made with <i class="fa fa-heart"></i> BY <a href="https://dribbble.com/izuddinhelmi" target="_blank">Izuddin Helmi</a>
+            Made with <i class="fa fa-heart"></i> BY <a href="https://dribbble.com/izuddinhelmi" target="_blank">Izuddin Helmi</a> &amp; <a href="https://github.com/crynobone" target="_blank">Mior Muhammad Zaki</a>
         </div>
     </div>
 </div>

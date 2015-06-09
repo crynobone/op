@@ -27,6 +27,11 @@ nav[role="navigation"] {
     }
 
     li {
+        &.open {
+            a, a:focus {
+                background: transparent;
+            }
+        }
         a {
             &:active, &:hover, &:focus {
                 background: transparent !important;

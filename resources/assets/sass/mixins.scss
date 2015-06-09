@@ -4,12 +4,19 @@
     background-position: 100% 0%;
 }
 
+@mixin code {
+    background: #e2f1ff;
+    color: rgba(0, 0, 0, 0.7);
+    color: #2095ff;
+}
+
 @mixin hr($px) {
     border-top: #222 solid $px;
     width: 80px;
 }
 
 @mixin block-code {
+    font-size: 12px;
     background: #1B1A20;
     border:none;
     border-radius: 3px;
